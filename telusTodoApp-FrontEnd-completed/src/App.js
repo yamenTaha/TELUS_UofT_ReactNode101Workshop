@@ -66,7 +66,7 @@ function TodoForm({ addTodo }) {
   return (
     <form onSubmit={handleSubmit}>
       <Input
-        label="Add Todo"
+        label="Add To-Do"
         value={value}
         onChange={e => setValue(e.target.value)}
       />
@@ -82,7 +82,7 @@ function Header() {
           <img src={telusLogo} style={{width: "120px"}}></img>
        </FlexGrid.Col>
        <FlexGrid.Col>
-          <Heading level="h1">Todo App</Heading>
+          <Heading level="h1">To-Do</Heading>
        </FlexGrid.Col>
      </FlexGrid.Row>
     </FlexGrid>

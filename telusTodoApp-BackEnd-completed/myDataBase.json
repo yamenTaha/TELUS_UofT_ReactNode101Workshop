@@ -2,32 +2,32 @@
     "index": 100,
     "todo": [
         {
-            "id": 85,
+            "id": 83,
             "text": "Learn about Components",
             "isCompleted": false
         },
         {
-            "id": 88,
+            "id": 89,
             "text": "Create a cool todo app",
             "isCompleted": false
         },
         {
             "id": 82,
-            "text": "Learn React",
+            "text": "Learn fundamentals of React",
             "isCompleted": false
         },
         {
-            "id": 86,
+            "id": 84,
             "text": "Learn about State",
             "isCompleted": false
         },
         {
-            "id": 83,
-            "text": "Learn NodeJS",
+            "id": 86,
+            "text": "Learn fundamentals of NodeJS",
             "isCompleted": false
         },
         {
-            "id": 87,
+            "id": 85,
             "text": "Learn about props",
             "isCompleted": false
         }
