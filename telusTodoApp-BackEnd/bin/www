@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+//Instantiate the Node JS Server, and listen on a specific port
+
 /**
  * Module dependencies.
  */

@@ -10,8 +10,7 @@ router.get('/', function(req, res) {
     SELECT *
     FROM TODO
   */
-  const todos = getTodo();
-  res.send(todos);
+  res.send([]);
 });
 
 router.post('/', function(req, res) {
@@ -20,37 +19,26 @@ router.post('/', function(req, res) {
     INSERT INTO TODO (text, isCompleted)
     VALUES (text, false)
   */
-  const todoText = req.body.text;
-  
-  const result = addTodo(todoText);
-  res.send(result);
+  res.send([]);
 });
 
 router.put('/:id', function(req, res) {
-  const todoId = parseInt(req.params.id);
-  const todoText = req.body.text;
-  const isCompleted = req.body.isCompleted;
-
   /* 
   SQL-Equivalent:
     UPDATE TODO
     SET isCompleted = true
     WHERE id = todoId;
   */
-  const result = updateTodo(todoId, todoText, isCompleted);
-  res.send(result);
+  res.send([]);
 });
 
 router.delete('/:id', function(req, res) {
-  const todoId = parseInt(req.params.id);
-
   /* 
   SQL-Equivalent:
     DELETE FROM TODO 
     WHERE id = todoId;
   */
-  const result = deleteTodo(todoId);
-  res.send(result);
+  res.send([]);
 });
 
 module.exports = router;
